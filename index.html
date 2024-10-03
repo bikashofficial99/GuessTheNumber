@@ -80,6 +80,13 @@
         };
 
         function checkGuess(guess){
+            if(guess === randomNumber){
+                displayMessage('You guessed it right')
+                endGame()
+            }elseif (guess < randomNumber){
+                displayMessage('Number is TOOO LOW')
+
+            }
         
         };
 
