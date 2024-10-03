@@ -83,12 +83,16 @@
             if(guess === randomNumber){
                 displayMessage('You guessed it right')
                 endGame()
-            }elseif (guess < randomNumber){
+            } elseif (guess < randomNumber){
                 displayMessage('Number is TOOO LOW')
 
             }
+             elseif (guess > randomNumber){
+                displayMessage('Number is TOOO High')
+
+            }
+        }
         
-        };
 
         function displayGuess(guess){
 
